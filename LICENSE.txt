@@ -1,0 +1,14 @@
+Proprietary License
+
+Copyright (C) 2025 Kevin De Bosscher. All rights reserved.
+
+This software is provided "as is" without any warranties, express or implied.
+
+Permission is hereby granted to redistribute this software in its original, unmodified form for personal or commercial use, provided that:
+1. All copies include this license notice and copyright statement.
+2. Redistribution is not for profit without explicit written permission from the copyright holder.
+3. No modifications, alterations, reverse engineering, or derivative works are allowed.
+
+Any violation of these terms voids the license, and you must cease use and distribution immediately.
+
+For permissions beyond this license, contact the copyright holder at info@grss.be.
