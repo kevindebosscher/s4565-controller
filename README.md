@@ -1,11 +1,11 @@
-# BSC Boley Control User Manual
+# BSC Boley/S4565 Honeywell Control User Manual
 
-Welcome to the **BSC Boley Control** system! This guide is designed for beginners to help you understand and use your fireplace control system easily. The system allows you to control your fireplace through a web interface, a remote control, or home automation systems. Follow this simple manual to get started.
+Welcome to the **BSC Boley/S4565 Control/** system! This guide is designed for beginners to help you understand and use your fireplace control system easily. The system allows you to control your fireplace through a web interface, a remote control, or home automation systems. Follow this simple manual to get started.
 
 ---
 
 ## Table of Contents
-1. [What is the BSC Boley Control?](#what-is-the-bsc-boley-control)
+1. [What is the BSC Boley/S4565 Honeywell Control?](#what-is-the-bsc-boley-control)
 2. [Getting Started](#getting-started)
    - Connecting to the System
    - Accessing the Web Interface
