@@ -1,1 +1,1 @@
-https://github.com/kevindebosscher/s4565-controller/releases/download/v1.3/s4565-controller-r1.3.bin
+https://github.com/kevindebosscher/s4565-controller/releases/download/r1.2/s4565-controller-r1.2.bin
