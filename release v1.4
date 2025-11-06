@@ -1,0 +1,156 @@
+BSC/S4565 Controller - Release v1.3🔥 Major Features & Improvements🚀 Automatic Firmware Updates (NEW!)
+
+NEW: Fully automatic OTA (Over-The-Air) firmware updates
+NEW: Background update checking (hourly when system is stopped)
+NEW: One-click manual update from GitHub releases
+NEW: Automatic installation when new version detected
+NEW: Version comparison and availability detection
+NEW: Safe update process with automatic reboot
+NEW: Toggle automatic updates on/off in settings
+NEW: Updates only performed when system is in safe state (stopped)
+NEW: GitHub integration for seamless release distribution
+NEW: Update progress tracking and status display
+NEW: Fallback to manual update if automatic fails
+NEW: Firmware version history tracking
+IMPROVED: Update button shows "Update Now OTA" when new version available
+IMPROVED: Clear visual indicators for update availability
+🛡️ Safety Override Enhancement
+
+Fixed: Safety Override now properly bypasses all fault conditions for analog input control
+Fixed: Analog input can now start the system when Safety Override is enabled, even with active faults
+Fixed: Valve control via analog input respects Safety Override settings
+Fixed: Wave function operates correctly when Safety Override is active
+📊 Usage Statistics & Analytics
+
+NEW: Daily statistics tracking for the last 30 days
+NEW: Interactive charts showing:
+
+Daily burning hours trend
+Start count and fault count comparison
+Average valve position over time
+
+
+NEW: Statistics page with Chart.js visualization
+NEW: Persistent statistics storage in EEPROM
+🔒 Critical Safety Improvements
+
+Fixed: Disabling analog input now immediately stops the fire for safety
+Fixed: Analog input safety checks now properly respect Safety Override
+Improved: Ultra-conservative limit switch debouncing (2-second stable close detection)
+Improved: Fail-safe limit switch logic (immediately accepts OPEN state)
+Enhanced: 10-second safety extraction on system stop
+Enhanced: Mandatory safety checks before all remote/analog starts
+CRITICAL: Auto-updates only run when system is safely stopped
+📧 Email Alert System
+
+NEW: Configurable email alerts for faults and maintenance
+NEW: Support for up to 3 email recipients
+NEW: Customizable fireplace name for alert identification
+NEW: Fault threshold configuration (1-50 faults before alert)
+NEW: Email cooldown timer (5 mins - 6 hours)
+NEW: Maintenance reminder alerts
+NEW: Test email functionality
+NEW: Beautiful HTML email templates with system status
+NEW: Alert filtering by fault type (Thermal, Limit Switch, PDS, etc.)
+🌐 Network & Connectivity
+
+NEW: mDNS hostname configuration (access via http://fireplace.local)
+NEW: Custom hostname support (e.g., http://living-room.local)
+NEW: Improved WiFi connection reliability for OTA updates
+NEW: WiFi scan progress indicator with visual feedback
+FIXED: WiFi settings now persist correctly after connection failure
+IMPROVED: Fallback to AP mode without clearing station settings
+REQUIRED: Stable WiFi connection needed for automatic updates
+🎮 Remote Control Enhancements
+
+NEW: Dyson AM05 preset mode with 100% reliable operation
+NEW: Pre-configured button mappings for Dyson AM05:
+
+Power/Sleep: Start/Stop system
+Heat +/-: Flame control (valve adjustment)
+Oscillate: Wave function toggle
+Fan +/-: Output 2 / Second valve control
+
+
+IMPROVED: Universal IR learning mode
+IMPROVED: Universal RF (433MHz) learning mode
+IMPROVED: Remote type switching with automatic device restart
+IMPROVED: Single Start/Stop toggle button (unified from separate buttons)
+FIXED: Remote command debouncing (1-second timeout)
+FIXED: Remote commands now respect safety checks
+🔧 System Management
+
+NEW: Automatic firmware update system with GitHub integration
+NEW: Manual firmware check and update buttons
+NEW: Maintenance interval tracking and alerts
+NEW: Auto-shutdown timer (1-24 hours configurable)
+NEW: Firmware update progress indicators
+NEW: Last successful start timestamp tracking
+NEW: Fault history with timestamps (last 5 faults)
+NEW: Total runtime tracking
+NEW: Firmware update history display
+IMPROVED: Start count and fault count statistics
+IMPROVED: Pilot burning hours separate from main burning hours
+IMPROVED: Update availability checking on settings page load
+💡 LED Status Indicators
+
+ENHANCED: Comprehensive fault indication system:
+
+Off: System stopped, no faults
+Breathing: System starting (first 15 seconds)
+Solid On: System running normally
+1 Blink + Pause: Thermal Recoil fault
+2 Blinks + Pause: Limit Switch fault
+3 Blinks + Pause: General Fault Input
+4 Blinks + Pause: PDS (Pressure Switch) fault
+
+
+🏠 Domotica Integration
+
+IMPROVED: Analog input now properly integrates with Safety Override
+FIXED: System stops immediately when analog input is disabled
+IMPROVED: Voltage reading display with real-time updates
+IMPROVED: Progress bar for voltage visualization
+📱 User Interface
+
+NEW: AP mode notification banner with WiFi setup recommendation
+NEW: Statistics page with interactive graphs
+NEW: Firmware update section with manual and OTA options
+NEW: Auto-update toggle switch in settings
+NEW: Update availability badge and notifications
+IMPROVED: Settings page organization and clarity
+IMPROVED: Email settings section with test functionality
+IMPROVED: Better error messages and user feedback
+IMPROVED: Consistent styling across all pages
+IMPROVED: Responsive design for mobile devices
+🔐 Modbus TCP/IP
+
+NEW: Second Valve control via Modbus register 8
+IMPROVED: User definable output control via register 7
+IMPROVED: Start count register (register 1)
+FIXED: All Modbus registers now respect Safety Override
+ENHANCED: Real-time register updates every 100ms
+⚙️ Configuration & Storage
+
+IMPROVED: EEPROM structure optimization
+IMPROVED: Configuration validation on boot
+IMPROVED: Retry logic for EEPROM commits
+NEW: Automatic migration from legacy settings
+NEW: Statistics storage (last 30 days)
+NEW: Auto-update preference storage
+NEW: Last firmware update timestamp tracking
+🐛 Bug Fixes
+
+FIXED: Safety Override not working with analog input control
+FIXED: Analog input unable to start fire with Safety Override enabled
+FIXED: Fire not stopping when analog input checkbox disabled
+FIXED: WiFi settings being cleared after connection timeout
+FIXED: Valve control blocked during faults even with Safety Override
+FIXED: Wave function not respecting Safety Override
+FIXED: Remote commands bypassing safety checks
+FIXED: Limit switch false triggers due to noise
+FIXED: Firmware name not saving after OTA update
+FIXED: mDNS hostname not persisting after restart
+FIXED: Email alerts not respecting cooldown timer
+FIXED: Modbus registers not updating during Safety Override
+FIXED: Update availability not refreshing on settings page
